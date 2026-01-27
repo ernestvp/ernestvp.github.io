@@ -424,7 +424,10 @@ body.dislexia {
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
+  outline: 3px solid #ffdd57; 
+  outline-offset: 3px;
 }
+
 
 body.contraste {
   --fondo: #000;
@@ -442,6 +445,7 @@ body.contraste {
   color: #ffdd57; 
 }
 .banner-cookies button {
+  background: #ffdd57;
   color: #000;
 }
 
