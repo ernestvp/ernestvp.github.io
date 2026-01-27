@@ -182,7 +182,7 @@ body {
 }
 
 .formulario-contacto button {
-  background: var(--acento);
+  background: var(--primario);
   color: var(--blanco);
   border: none;
   padding: 0.7rem;
@@ -192,7 +192,7 @@ body {
   transition: background-color 0.3s;
 }
 .formulario-contacto button:hover {
-  background: #d85434;
+  background: #003f4f;
 }
 /* Banner Cookies */
 .banner-cookies {
