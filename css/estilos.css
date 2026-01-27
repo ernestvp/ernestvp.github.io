@@ -296,6 +296,11 @@ body {
     display: block;
 }
 
+body.dislexia {
+  font-family: 'OpenDyslexic', sans-serif;
+}
+
+
 /* Nueva animación - flotar */
 @keyframes flotar {
     0%, 100% { transform: translateY(0); }
@@ -382,5 +387,42 @@ body {
         margin-bottom: 10px !important;
         break-inside: avoid;
     }
+}
+.accesibilidad {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.accesibilidad button {
+  background: var(--blanco);
+  color: var(--primario);
+  border: 1px solid var(--primario);
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.accesibilidad button:hover,
+.accesibilidad button:focus {
+  outline: 2px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  background: var(--acento);
+  color: var(--blanco);
+  padding: 0.5rem;
+  z-index: 9999;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
 }
 

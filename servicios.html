@@ -11,17 +11,26 @@
   <link rel="stylesheet" href="./css/responsive.css" />
   <link rel="icon" type="image/png" href="./png/genfavicon-32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-dyslexic">
 </head>
 <body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
   <header class="encabezado">
+    <button class="menu-movil" onclick="alternarMenu()">☰</button>
     <nav class="menu-navegacion">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html" class="activo">Servicios</a>
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="servicios.html">Servicios</a>
       <a href="contacto.html">Contacto</a>
     </nav>
+    <div class="accesibilidad">
+      <button id="modo-normal">Normal</button>
+      <button id="modo-contraste">Contraste</button>
+      <button id="modo-dislexia">Dislexia</button>
+    </div>
   </header>
 
-  <main class="principal">
+  <main id="contenido" class="principal">
     <section class="lista-servicios">
       <h1>Servicios que ofrecemos</h1>
       <div class="grid-servicios">
