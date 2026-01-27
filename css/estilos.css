@@ -432,5 +432,14 @@ body.contraste {
   --secundario: #ddd;
   --acento: #ffdd57;
 }
+.banner-cookies {
+  background: #000;
+  color: #fff;
+}
+
+.banner-cookies a {
+  color: #ffdd57; 
+}
+
 
 
