@@ -154,7 +154,7 @@ body {
 }
 .formulario-contacto label {
   font-weight: 600;
-  color: var(--secundario);
+  color: var(--primario);
 }
 .formulario-contacto input, .formulario-contacto textarea {
   width: 100%;
@@ -169,12 +169,18 @@ body {
   border-color: var(--acento);
 }
 .acepto-privacidad {
-  font-size: 0.9rem;
-  color: #444;
+  font-size: 0.95rem;
+  color: var(--primario);
 }
 .acepto-privacidad input {
   margin-right: 0.4rem;
 }
+.acepto-privacidad a {
+  color: var(--primario);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .formulario-contacto button {
   background: var(--acento);
   color: var(--blanco);
