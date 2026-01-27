@@ -425,4 +425,12 @@ body.dislexia {
   left: 1rem;
   top: 1rem;
 }
+body.contraste {
+  --fondo: #000;
+  --texto: #fff;
+  --primario: #fff;
+  --secundario: #f2f2f2;
+  --acento: #ffdd57;
+}
+
 
