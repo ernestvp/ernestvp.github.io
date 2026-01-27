@@ -1,0 +1,34 @@
+/* Mobile First: ya está para móvil en estilos.css */
+
+/* Pantallas medianas (tablet y pequeño desktop) */
+@media (min-width: 600px) {
+  .grid-servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principal {
+    padding: 2rem 3rem;
+  }
+}
+
+/* Pantallas grandes (desktop) */
+@media (min-width: 992px) {
+  .grid-servicios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .principal {
+    padding: 3rem 5rem;
+    max-width: 1300px;
+  }
+
+  .menu-navegacion {
+    justify-content: flex-start;
+    gap: 3rem;
+    padding-left: 3rem;
+  }
+
+  .encabezado {
+    padding: 1.5rem 0;
+  }
+}

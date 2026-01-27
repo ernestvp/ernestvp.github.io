@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Tu Nombre" />
+  <meta name="description" content="Contacto con Mi Proyecto Web" />
+  <title>Contacto - Mi Proyecto Web</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="icon" type="image/png" href="./png/genfavicon-32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="menu-navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html" class="activo">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <section class="quienes-somos">
+      <img src="./img/equipo.jpg" alt="Equipo completo de Mi Proyecto Web en oficina moderna">
+      <h1>Quiénes somos</h1>
+      <p>Somos un equipo apasionado por la tecnología y el diseño, ofreciendo soluciones innovadoras a nuestros clientes.</p>
+    </section>
+    <div class="geolocalizacion">
+      <img src="./img/ubicacion.jpg" alt="Mapa mostrando nuestra ubicación en Vitoria">
+    <i class="fa-solid fa-location-dot"></i> Araba Kalea, 39, 01006 Vitoria-Gasteiz Araba | <i class="fa-solid fa-phone"></i> +34 123 456 789
+    </div>
+
+    <section class="formulario-contacto">
+      <h2>Contacto</h2>
+      <form action="#">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="tu@email.com" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+        <label class="acepto-privacidad">
+          <input type="checkbox" name="privacidad" required />
+          Acepto la <a href="#" target="_blank" rel="noopener noreferrer">política de privacidad</a> y el tratamiento de mis datos conforme a la ley RGPD.
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <p>© 2025 Mi Proyecto Web - Todos los derechos reservados</p>
+    <div class="redes-sociales">
+      <a href="#" class="red-social"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#" class="red-social"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="red-social"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+  <div id="bannerCookies" class="banner-cookies">
+    <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
+    <a href="#" style="color: var(--acento);">Política de cookies</a></span>
+    <button onclick="aceptarCookies()">Aceptar</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Tu Nombre" />
+  <meta name="description" content="Página de inicio de Mi Proyecto Web" />
+  <title>Inicio - Mi Proyecto Web</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/genfavicon-32.png" sizes="32x32">
+  <link rel="icon" href="/genfavicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="./png/genfavicon-32.png">
+</head>
+<body>
+  <header class="encabezado">
+    <button class="menu-movil" onclick="alternarMenu()">☰</button>
+    <nav class="menu-navegacion">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <section class="bienvenida">
+      <h1>Bienvenido a Mi Proyecto Web</h1>
+      <p>Ofrecemos soluciones digitales creativas para impulsar tu negocio.</p>
+      <img src="./img/hero-image.jpg" alt="Equipo de trabajo colaborando en proyecto digital" class="imagen-hero">
+    </section>
+
+    <section class="servicios-destacados">
+      <h2>Servicios destacados</h2>
+      <div class="grid-servicios">
+        <article class="servicio">
+          <h3>Diseño Web</h3>
+          <p>Páginas adaptables, modernas y atractivas.</p>
+          <img src="./img/diseno-web.jpg" alt="Pantallas de ordenador mostrando diseños web modernos">
+        </article>
+        <article class="servicio">
+          <h3>Marketing Digital</h3>
+          <p>Estrategias para crecer en redes y buscadores.</p>
+          <img src="./img/marketing.jpg" alt="Gráficos y estadísticas de crecimiento en redes sociales">
+        </article>
+        <article class="servicio">
+          <h3>Consultoría TI</h3>
+          <p>Optimiza tus recursos tecnológicos.</p>
+          <img src="./img/consultoria.jpg" alt="Profesional de tecnología analizando datos en tablet">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <p>© 2025 Mi Proyecto Web - Todos los derechos reservados</p>
+    <div class="redes-sociales">
+      <a href="#" class="red-social"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#" class="red-social"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="red-social"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <div id="bannerCookies" class="banner-cookies">
+    <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
+    <a href="#" style="color: var(--acento);">Política de cookies</a></span>
+    <button onclick="aceptarCookies()">Aceptar</button>
+  </div>
+</body>
+</html>

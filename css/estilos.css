@@ -1,0 +1,386 @@
+/* reset básico */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+/* variables de color */
+:root {
+  --primario: #005f73;
+  --secundario: #0a9396;
+  --acento: #ee6c4d;
+  --fondo: #fafafa;
+  --texto: #222;
+  --blanco: #fff;
+}
+
+/* body y layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  font-size: 1rem;
+  line-height: 1.5;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* encabezado y menú */
+.encabezado {
+  background: var(--primario);
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.menu-navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.menu-navegacion a {
+  color: var(--blanco);
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+.menu-navegacion a:hover, .menu-navegacion a.activo {
+  color: var(--acento);
+  background: rgba(238,108,77,0.15);
+}
+
+/* contenido principal */
+.principal {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* bienvenida */
+.bienvenida {
+  background: var(--blanco);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  animation: aparecer 1.2s ease forwards;
+}
+.bienvenida h1 {
+  color: var(--primario);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.bienvenida p {
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* servicios */
+.servicio {
+  background: var(--blanco);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.07);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+}
+.servicio h3 {
+  color: var(--secundario);
+  margin-bottom: 0.4rem;
+}
+.servicio p {
+  color: #555;
+  font-size: 1rem;
+}
+/* Grid para servicios */
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+/* estilo servicios detalle (servicios.html) */
+.servicio-detalle {
+  background: var(--blanco);
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  color: var(--texto);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicio-detalle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.12);
+}
+.servicio-detalle h2 {
+  color: var(--secundario);
+  margin-bottom: 0.5rem;
+}
+.servicio-detalle p {
+  font-size: 1rem;
+  color: #444;
+}
+
+
+/* pie de página y redes */
+.pie-pagina {
+  background: var(--primario);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* formulario contacto */
+.formulario-contacto form {
+  max-width: 450px;
+  margin: 0 auto;
+  background: var(--blanco);
+  padding: 1.5rem 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  display: grid;
+  gap: 1rem;
+}
+.formulario-contacto label {
+  font-weight: 600;
+  color: var(--secundario);
+}
+.formulario-contacto input, .formulario-contacto textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+  outline: none;
+  border-color: var(--acento);
+}
+.acepto-privacidad {
+  font-size: 0.9rem;
+  color: #444;
+}
+.acepto-privacidad input {
+  margin-right: 0.4rem;
+}
+.formulario-contacto button {
+  background: var(--acento);
+  color: var(--blanco);
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.formulario-contacto button:hover {
+  background: #d85434;
+}
+/* Banner Cookies */
+.banner-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primario);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.banner-cookies button {
+    background: var(--acento);
+    color: var(--blanco);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.banner-cookies button:hover {
+    background: #d85434;
+    transform: scale(1.05);
+}
+
+/* Menú móvil */
+.menu-movil {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Redes sociales footer */
+.redes-sociales {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.red-social {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.red-social:hover {
+    color: var(--acento);
+    transform: translateY(-3px);
+}
+
+/* Geolocalización */
+.geolocalizacion {
+    text-align: center;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #666;
+}
+/* Estilos imágenes */
+.imagen-hero {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.servicio img, .servicio-detalle img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+}
+
+.geolocalizacion img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.quienes-somos img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Nueva animación - flotar */
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.servicio:hover, .servicio-detalle:hover {
+    animation: flotar 2s ease-in-out infinite;
+}
+
+/* Responsive mejorado */
+@media (max-width: 600px) {
+    .menu-movil {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .menu-navegacion {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--primario);
+        padding: 1rem 0;
+        gap: 0;
+    }
+    
+    .menu-navegacion a {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .banner-cookies {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .encabezado {
+        position: relative;
+    }
+}
+
+/* animación bienvenida */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ESTILOS IMPRESION */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    .encabezado,
+    .menu-navegacion,
+    .pie-pagina,
+    .formulario-contacto button {
+        display: none !important;
+    }
+    
+    .principal {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .servicio,
+    .servicio-detalle,
+    .bienvenida {
+        border: 1px solid #ccc !important;
+        margin-bottom: 10px !important;
+        break-inside: avoid;
+    }
+}
+
