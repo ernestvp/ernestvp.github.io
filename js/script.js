@@ -4,10 +4,16 @@ function aceptarCookies() {
 
 function alternarMenu() {
   const nav = document.querySelector('.menu-navegacion');
+  const boton = document.querySelector('.menu-movil');
+
   if (nav.style.display === 'flex') {
     nav.style.display = 'none';
+    boton.setAttribute('aria-expanded', 'false');
+    boton.setAttribute('aria-label', 'Abrir menú');
   } else {
     nav.style.display = 'flex';
+    boton.setAttribute('aria-expanded', 'true');
+    boton.setAttribute('aria-label', 'Cerrar menú');
   }
 }
 

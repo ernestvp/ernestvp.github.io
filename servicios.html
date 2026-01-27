@@ -16,21 +16,21 @@
 <body>
   <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
-  <header class="encabezado">
-    <button class="menu-movil" onclick="alternarMenu()">☰</button>
-    <nav class="menu-navegacion">
+  <header class="encabezado" role="banner">
+    <button class="menu-movil" onclick="alternarMenu()" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+    <nav id="menu" class="menu-navegacion" role="navigation" aria-label="Menú principal">
       <a href="index.html" class="activo">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="contacto.html">Contacto</a>
     </nav>
-    <div class="accesibilidad">
-      <button id="modo-normal">Normal</button>
-      <button id="modo-contraste">Contraste</button>
-      <button id="modo-dislexia">Dislexia</button>
+    <div class="accesibilidad" role="region" aria-label="Opciones de accesibilidad">
+      <button id="modo-normal" aria-label="Modo normal">Normal</button>
+      <button id="modo-contraste" aria-label="Modo contraste">Contraste</button>
+      <button id="modo-dislexia" aria-label="Modo dislexia">Dislexia</button>
     </div>
   </header>
 
-  <main id="contenido" class="principal">
+  <main id="contenido" class="principal" role="main">
     <section class="lista-servicios">
       <h1>Servicios que ofrecemos</h1>
       <div class="grid-servicios">
@@ -58,7 +58,7 @@
     </section>
   </main>
 
-  <footer class="pie-pagina">
+  <footer class="pie-pagina" role="contentinfo">
     <p>© 2025 Mi Proyecto Web - Todos los derechos reservados</p>
     <div class="redes-sociales">
       <a href="#" class="red-social"><i class="fa-brands fa-square-facebook"></i></a>
@@ -66,7 +66,7 @@
       <a href="#" class="red-social"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
-  <div id="bannerCookies" class="banner-cookies">
+  <div id="bannerCookies" class="banner-cookies" role="status" aria-live="polite" aria-label="Aviso de cookies">
     <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
     <a href="#" style="color: var(--acento);">Política de cookies</a></span>
     <button onclick="aceptarCookies()">Aceptar</button>
