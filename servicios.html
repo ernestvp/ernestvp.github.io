@@ -9,7 +9,6 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="./css/estilos.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
-  <link rel="icon" type="image/png" href="./png/genfavicon-32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-dyslexic">
   <script type="text/javascript">
@@ -27,8 +26,8 @@
   <header class="encabezado" role="banner">
     <button class="menu-movil" onclick="alternarMenu()" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
     <nav id="menu" class="menu-navegacion" role="navigation" aria-label="Menú principal">
-      <a href="index.html" class="activo">Inicio</a>
-      <a href="servicios.html">Servicios</a>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="activo">Servicios</a>
       <a href="contacto.html">Contacto</a>
     </nav>
     <div class="accesibilidad" role="region" aria-label="Opciones de accesibilidad">
@@ -43,24 +42,24 @@
       <h1>Servicios que ofrecemos</h1>
       <div class="grid-servicios">
         <article class="servicio-detalle">
-          <img src="./img/proyecto-diseno.jpg" alt="Proyecto completo de diseño web responsive terminado">
+          <img src="./img/proyecto-diseno.jpg" alt="Proyecto de diseño web" />
           <h2>Diseño Web</h2>
-          <p>Webs que se adaptan a todo.</p>
+          <p>Web bonita, rápida y fácil de usar.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/campana-marketing.jpg" alt="Resultados de campaña de marketing digital con métricas positivas">
+          <img src="./img/campana-marketing.jpg" alt="Campaña de marketing digital" />
           <h2>Marketing Digital</h2>
-          <p>Te ayudamos a ganar visibilidad online.</p>
+          <p>Mejoramos tu presencia en redes y buscadores.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/reunion-consultoria.jpg" alt="Sesión de consultoría tecnológica con cliente">
+          <img src="./img/reunion-consultoria.jpg" alt="Consultoría tecnológica" />
           <h2>Consultoría TI</h2>
-          <p>Asesoría tecnológica.</p>
+          <p>Te asesoramos para mejorar tu tecnología.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/soporte-tecnico.jpg" alt="Técnico solucionando incidencia en sistema informático">
+          <img src="./img/soporte-tecnico.jpg" alt="Soporte técnico" />
           <h2>Soporte Técnico</h2>
-          <p>Soporte técnico rápido.</p>
+          <p>Ayuda rápida para problemas técnicos.</p>
         </article>
       </div>
     </section>
@@ -74,10 +73,11 @@
       <a href="https://www.twitter.com" class="red-social" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
+
   <div id="bannerCookies" class="banner-cookies" role="status" aria-live="polite" aria-label="Aviso de cookies">
     <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
     <a href="#">Política de cookies</a></span>
-    <button onclick="aceptarCookies()">Aceptar</button>
+    <button onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
   </div>
   <script src="./js/script.js"></script>
 </body>

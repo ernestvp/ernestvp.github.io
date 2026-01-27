@@ -9,7 +9,6 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="./css/estilos.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
-  <link rel="icon" type="image/png" href="./png/genfavicon-32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/open-dyslexic">
   <script type="text/javascript">
@@ -27,9 +26,9 @@
   <header class="encabezado" role="banner">
     <button class="menu-movil" onclick="alternarMenu()" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
     <nav id="menu" class="menu-navegacion" role="navigation" aria-label="Menú principal">
-      <a href="index.html" class="activo">Inicio</a>
+      <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="activo">Contacto</a>
     </nav>
     <div class="accesibilidad" role="region" aria-label="Opciones de accesibilidad">
       <button id="modo-normal" aria-label="Modo normal">Normal</button>
@@ -40,30 +39,32 @@
 
   <main id="contenido" class="principal" role="main">
     <section class="quienes-somos">
-      <img src="./img/equipo.jpg" alt="Equipo completo de Mi Proyecto Web en oficina moderna">
-      <h1>Quiénes somos</h1>
-      <p>Ayudamos a empresas con soluciones digitales.</p>
+      <img src="./img/equipo.jpg" alt="Equipo de Mi Proyecto Web" />
+      <h1>Contacto</h1>
+      <p>Escríbenos y te respondemos rápido.</p>
     </section>
+
     <div class="geolocalizacion">
-      <img src="./img/ubicacion.jpg" alt="Mapa mostrando nuestra ubicación en Vitoria">
-    <i class="fa-solid fa-location-dot"></i> Araba Kalea, 39, 01006 Vitoria-Gasteiz Araba | <i class="fa-solid fa-phone"></i> +34 123 456 789
+      <img src="./img/ubicacion.jpg" alt="Mapa de ubicación" />
+      <p><i class="fa-solid fa-location-dot"></i> Araba Kalea, 39, Vitoria-Gasteiz</p>
+      <p><i class="fa-solid fa-phone"></i> +34 123 456 789</p>
     </div>
 
     <section class="formulario-contacto">
-      <h2>Contacto</h2>
+      <h2>Envíanos un mensaje</h2>
       <form action="#">
-        <label for="nombre">Nombre completo:</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
 
-        <label for="correo">Correo electrónico:</label>
+        <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" placeholder="tu@email.com" required />
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
 
         <label class="acepto-privacidad">
           <input type="checkbox" name="privacidad" required />
-          Acepto la <a href="#" target="_blank" rel="noopener noreferrer">política de privacidad</a> y el tratamiento de mis datos conforme a la ley RGPD.
+          Acepto la política de privacidad.
         </label>
 
         <button type="submit" class="btn-enviar">Enviar</button>
@@ -79,12 +80,14 @@
       <a href="https://www.twitter.com" class="red-social" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
+
   <div id="bannerCookies" class="banner-cookies" role="status" aria-live="polite" aria-label="Aviso de cookies">
     <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
     <a href="#">Política de cookies</a></span>
-    <button onclick="aceptarCookies()">Aceptar</button>
+    <button onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
   </div>
   <script src="./js/script.js"></script>
 </body>
 </html>
+
 
