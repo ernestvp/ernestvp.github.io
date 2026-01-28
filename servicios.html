@@ -35,6 +35,14 @@
       }
     }
   </script>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "v846tdrz37");
+  </script>
+  <script src="https://t.contentsquare.net/uxa/ad39d5df0ee86.js"></script>
 </head>
 <body>
   <a href="#contenido" class="skip-link">Saltar al contenido</a>
@@ -42,8 +50,8 @@
   <header class="encabezado" role="banner">
     <button class="menu-movil" onclick="alternarMenu()" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
     <nav id="menu" class="menu-navegacion" role="navigation" aria-label="Menú principal">
-      <a href="index.html" class="activo">Inicio</a>
-      <a href="servicios.html">Servicios</a>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="activo">Servicios</a>
       <a href="contacto.html">Contacto</a>
     </nav>
     <div class="accesibilidad" role="region" aria-label="Opciones de accesibilidad">
@@ -55,45 +63,48 @@
 
   <main id="contenido" class="principal" role="main">
     <section class="lista-servicios">
-      <h1>Servicios que ofrecemos</h1>
+      <h1>Servicios</h1>
       <div class="grid-servicios">
         <article class="servicio-detalle">
-          <img src="./img/proyecto-diseno.jpg" alt="Proyecto completo de diseño web responsive terminado">
+          <img src="./img/proyecto-diseno.jpg" alt="Diseño">
           <h2>Diseño Web</h2>
-          <p>Desarrollamos sitios web adaptables, accesibles y personalizados.</p>
+          <p>Web adaptada a móviles.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/campana-marketing.jpg" alt="Resultados de campaña de marketing digital con métricas positivas">
-          <h2>Marketing Digital</h2>
-          <p>Posiciona tu marca y llega a más clientes con campañas efectivas.</p>
+          <img src="./img/campana-marketing.jpg" alt="Marketing">
+          <h2>Marketing</h2>
+          <p>Redes y anuncios.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/reunion-consultoria.jpg" alt="Sesión de consultoría tecnológica con cliente">
-          <h2>Consultoría TI</h2>
-          <p>Mejora tu infraestructura tecnológica con nuestro asesoramiento.</p>
+          <img src="./img/reunion-consultoria.jpg" alt="Consultoría">
+          <h2>Consultoría</h2>
+          <p>Mejoras en TI.</p>
         </article>
         <article class="servicio-detalle">
-          <img src="./img/soporte-tecnico.jpg" alt="Técnico solucionando incidencia en sistema informático">
-          <h2>Soporte Técnico</h2>
-          <p>Solución rápida y profesional para problemas técnicos.</p>
+          <img src="./img/soporte-tecnico.jpg" alt="Soporte">
+          <h2>Soporte</h2>
+          <p>Ayuda técnica rápida.</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="pie-pagina" role="contentinfo">
-    <p>© 2025 Mi Proyecto Web - Todos los derechos reservados</p>
+    <p>© 2025 Mi Proyecto Web</p>
     <div class="redes-sociales">
       <a href="https://www.facebook.com" class="red-social" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a>
       <a href="https://www.instagram.com" class="red-social" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
       <a href="https://www.twitter.com" class="red-social" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
     </div>
   </footer>
+
   <div id="bannerCookies" class="banner-cookies" role="status" aria-live="polite" aria-label="Aviso de cookies">
     <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
-    <a href="#" style="color: var(--acento);">Política de cookies</a></span>
-    <button onclick="aceptarCookies()">Aceptar</button>
+    <a href="#">Política de cookies</a></span>
+    <button onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
   </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>
+
