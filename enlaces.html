@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Tu Nombre" />
+  <meta name="description" content="Enlaces externos recomendados." />
+  <title>Enlaces - Mi Proyecto Web</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+  <header class="encabezado" role="banner">
+    <div class="accesibilidad" role="region" aria-label="Opciones de accesibilidad">
+        <button id="modo-normal" aria-label="Modo normal">Normal</button>
+        <button id="modo-contraste" aria-label="Modo contraste">Contraste</button>
+        <button id="modo-dislexia" aria-label="Modo dislexia">Dislexia</button>
+    </div>
+    <button class="menu-movil" onclick="alternarMenu()" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+    <nav id="menu" class="menu-navegacion" role="navigation" aria-label="Menú principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="enlaces.html" class="activo">Enlaces</a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="principal" role="main">
+    <section>
+      <h1>Enlaces externos</h1>
+      <p>En esta sección se añadirán enlaces a proyectos de compañeros.</p>
+      <ul>
+        <li><a href="https://ernestvp.github.io/">Mi Proyecto Web</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+      </ul>
+      <p><em>Actualmente no hay URLs de compañeros disponibles, pero la sección está preparada para añadirlas.</em></p>
+    </section>
+  </main>
+
+  <footer class="pie-pagina" role="contentinfo">
+    <p>© 2025 Mi Proyecto Web</p>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com" class="red-social" aria-label="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com" class="red-social" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com" class="red-social" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <div id="bannerCookies" class="banner-cookies" role="status" aria-live="polite" aria-label="Aviso de cookies">
+    <span><i class="fa-solid fa-cookie"></i> Usamos cookies para mejorar tu experiencia. 
+    <a href="#">Política de cookies</a></span>
+    <button onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
